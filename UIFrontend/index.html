@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blender WebView2 Overlay</title>
+  </head>
+  <body>
+    <div class="toolbar clickable-area" id="toolbar">
+      <div class="drag-handle" id="dragHandle">⋮⋮</div>
+
+      <div
+        class="tool-button clickable-area icon-scripts"
+        data-tool="render"
+        title="Script Catalog"
+      ></div>
+      <div
+        class="tool-button clickable-area icon-paint"
+        data-tool="camera"
+        title="Mixbox Painter"
+      ></div>
+    </div>
+
+    <div id="react-root"></div>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

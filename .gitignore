@@ -1,0 +1,41 @@
+# Visual Studio / C++
+.vs/
+*.user
+*.VC.db
+*.suo
+*.rsuser
+*.userosscache
+*.sln.docstates
+**/x64/
+**/x86/
+**/[Ww][Ii][Nn]32/
+**/[Aa][Rr][Mm]*/
+**/[Bb]in/
+**/[Oo]bj/
+**/[Dd]ebug*/
+**/[Rr]elease*/
+
+# Build artifacts
+build/
+*.zip
+
+# NuGet restored packages (C++)
+WebView2Control/packages/
+
+# Node / Vite (UI)
+UIFrontend/node_modules/
+UIFrontend/dist/
+UIFrontend/dist-ssr/
+UIFrontend/.vscode/
+UIFrontend/*.local
+UIFrontend/logs
+UIFrontend/*.log
+UIFrontend/npm-debug.log*
+UIFrontend/yarn-debug.log*
+UIFrontend/yarn-error.log*
+UIFrontend/pnpm-debug.log*
+UIFrontend/lerna-debug.log*
+
+# Editors / OS
+.idea/
+.DS_Store

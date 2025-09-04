@@ -1,0 +1,44 @@
+Checks: >
+  clang-analyzer-*,
+  modernize-*,
+  readability-*,
+  readability-identifier-naming,
+  performance-*,
+  bugprone-*,
+  cppcoreguidelines-*,
+  -cppcoreguidelines-owning-memory,
+  -cppcoreguidelines-pro-type-reinterpret-cast
+
+WarningsAsErrors: ''
+HeaderFilterRegex: 'WebView2Control/src/.*'
+FormatStyle: file
+
+ExtraArgs:
+  - -std=c++20
+  - -Ic:/Users/Owner/source/repos/BlenderWebUI/WebView2Control/packages/Microsoft.Web.WebView2.1.0.1108.44/build/native/include
+  - -Ic:/Users/Owner/source/repos/BlenderWebUI/WebView2Control/packages/Microsoft.Windows.ImplementationLibrary.1.0.210803.1/include
+  - -Ic:/Users/Owner/source/repos/BlenderWebUI/WebView2Control/src
+
+CheckOptions:
+  - key: readability-identifier-naming.ClassCase
+    value: CamelCase
+  - key: readability-identifier-naming.StructCase
+    value: CamelCase
+  - key: readability-identifier-naming.TypeAliasCase
+    value: CamelCase
+  - key: readability-identifier-naming.FunctionCase
+    value: CamelCase
+  - key: readability-identifier-naming.VariableCase
+    value: camelBack
+  - key: readability-identifier-naming.ParameterCase
+    value: camelBack
+  - key: readability-identifier-naming.MemberCase
+    value: camelBack
+  - key: readability-identifier-naming.GlobalConstantCase
+    value: UPPER_CASE
+  - key: readability-identifier-naming.ConstantCase
+    value: UPPER_CASE
+  - key: readability-identifier-naming.MacroDefinitionCase
+    value: UPPER_CASE
+  - key: readability-identifier-naming.IgnoredRegexp
+    value: '^(h|w|l)[A-Z].*'

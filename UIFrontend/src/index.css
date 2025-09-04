@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  user-select: none;
+}
+
+.toolbar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(45, 45, 45, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 4px;
+  transition: all 0.3s ease;
+  cursor: move;
+  width: auto;
+  min-width: auto;
+}
+
+.drag-handle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  color: #888;
+  font-size: 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.drag-handle:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.tool-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 16px;
+}
+
+.tool-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.tool-button.active {
+  background: rgba(76, 175, 80, 0.5);
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.clickable-area {
+  pointer-events: auto;
+}
+
+.icon-scripts::before {
+  content: "📁";
+  font-size: 18px;
+}
+
+.icon-paint::before {
+  content: "🎨";
+  font-size: 18px;
+}
+
+/* Counter-rotate icons when toolbar is vertical */
+.toolbar.vertical .tool-button {
+  transform: rotate(-90deg);
+}
+
+.toolbar.vertical .drag-handle {
+  transform: rotate(-90deg);
+}
