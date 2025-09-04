@@ -4,6 +4,7 @@ A Windows WebView2 overlay UI for Blender. It embeds a transparent C++ window on
 
 Example Usage:
 (Note all script previews and contents are arbitarily generated as filler)
+
 https://github.com/user-attachments/assets/a90dc15e-caff-4703-8bf3-faf59be5d819
 
 
