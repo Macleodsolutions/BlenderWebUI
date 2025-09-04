@@ -3,6 +3,11 @@
 A Windows WebView2 overlay UI for Blender. It embeds a transparent C++ window on top of Blender and communicates with a React/TypeScript frontend and a Blender Python add-on via WebView2 messages and Windows named pipes.
 
 
+
+https://github.com/user-attachments/assets/a90dc15e-caff-4703-8bf3-faf59be5d819
+
+
+
 ## Highlights
 - **Overlay UI**: Transparent, click-through when not over interactive regions.
 - **Two-way IPC**:
